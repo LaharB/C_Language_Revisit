@@ -2,7 +2,7 @@
 
 ----------------
 
-## Variables
+<details><summary>1.Variables</summary>
 
 - variable = A reusable container for a value.
 - Behaves as if it were the value it contains.
@@ -13,5 +13,7 @@
 - char = single character (1 byte)
 - char[] = array of characters (size varies)
 - bool = true or false (1 byte, requires <stdbool.h>)
-  
+
+</details> 
+
 -----------
