@@ -36,6 +36,6 @@ int main(){
     printf("%d\n", age);
     printf("%.2f\n", gpa);
     printf("%c\n", grade);
-
+    
     return 0;
 }

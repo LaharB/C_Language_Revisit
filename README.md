@@ -54,3 +54,32 @@ Specifies the minimum number of characters to print.
 
 -----------
 
+<details><summary>3. Arithmetic Operators</summary>
+
+# Arithmetic Operators
+
+**Arithmetic Operators** are used to perform common mathematical operations.
+
+### Basic Operators
+* `+` : Addition (e.g., `z = x + y;`)
+* `-` : Subtraction (e.g., `z = x - y;`)
+* `*` : Multiplication (e.g., `z = x * y;`)
+* `/` : Division (e.g., `z = x / y;`). 
+  * *Note:* If dividing an integer by an integer, the decimal part is dropped. Even if assigned to a `float` variable `z`, the answer will still be an integer result unless one of the operands is explicitly a float.
+* `%` : Modulus (e.g., `z = x % 2;`). Returns the remainder of a division.
+
+### Increment & Decrement
+* `++` : Increment operator. Increases an integer value by one (e.g., `x++;`).
+* `--` : Decrement operator. Decreases an integer value by one (e.g., `x--;`).
+
+### Augmented Assignment Operators
+Shortcuts to replace a statement where a variable is assigned a value calculated from itself.
+* `+=` : Addition assignment (e.g., `x += 2;` is the same as `x = x + 2;`)
+* `-=` : Subtraction assignment (e.g., `x -= 3;` is the same as `x = x - 3;`)
+* `*=` : Multiplication assignment (e.g., `x *= 2;` is the same as `x = x * 2;`)
+* `/=` : Division assignment (e.g., `x /= 2;` is the same as `x = x / 2;`)
+
+</details>
+
+---------
+
