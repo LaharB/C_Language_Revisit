@@ -83,3 +83,30 @@ Shortcuts to replace a statement where a variable is assigned a value calculated
 
 ---------
 
+<details><summary>4. User Input</summary>
+
+# User Input
+
+Taking input from the user in C requires standard input/output functions, primarily `scanf` and `fgets`. 
+
+### `scanf()`
+Reads formatted input from the standard input (keyboard).
+* Requires the **address-of operator** `&` before the variable name so the value is stored at that specific memory address (e.g., `scanf("%d", &age);`).
+* **Limitation with strings:** `scanf` stops reading after encountering any whitespaces. It is not ideal for strings containing spaces (like a full name).
+
+### The Newline `\n` Buffer Issue
+When reading mixed data types (like numbers followed by characters/strings), hitting the "Enter" key leaves a newline character (`\n`) in the input buffer. The program might pick this up instead of waiting for the next input.
+* **Fix for `scanf` (char):** Add a space before the format specifier to tell it to skip the newline/whitespaces. 
+  * *Example:* `scanf(" %c", &grade);`
+* **Fix for `fgets`:** Use `getchar();` immediately before your `fgets` function to consume and clear the `\n` character left in the buffer.
+
+### `fgets()`
+The preferred method to get a string of text that includes spaces.
+* **Syntax:** Takes 3 parameters: `fgets(variable, sizeof(variable), stdin);` (Using `sizeof()` avoids manually typing the string size every time).
+* **Removing the Newline Character:** `fgets` reads the entire line, including the "Enter" key press (`\n`). To prevent unwanted line breaks or undefined behavior when printing, replace the newline character with a **null terminator** (`\0`).
+  * *Example:* `name[strlen(name) - 1] = '\0';`
+  * *(Note: This string manipulation requires `#include <string.h>` at the top of your file).*
+
+</details>
+
+-----------------------------------
